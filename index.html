@@ -1,0 +1,260 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabina Bacaoanu — Portfolio</title>
+    <meta
+      name="description"
+      content="Sabina Bacaoanu — Computer Science & AI portfolio. Projects, skills, and contact."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Top progress bar -->
+    <div class="progress" aria-hidden="true">
+      <div class="progress__bar" id="progressBar"></div>
+    </div>
+
+    <header class="header" id="top">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Sabina Bacaoanu</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Toggle menu</span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a class="nav__link" href="#work">Projects</a>
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#skills">Skills</a>
+          <a class="nav__link" href="#contact">Contact</a>
+
+          <button class="mode" id="modeBtn" type="button" aria-label="Toggle theme" title="Toggle theme">
+            <span class="mode__icon" id="modeIcon">🌙</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="section hero" aria-label="Hero">
+        <div class="container hero__grid">
+          <div class="hero__copy reveal">
+            <p class="pill">Computer Science & AI • Portfolio</p>
+
+            <h1>
+              <span class="accent">Sabina Bacaoanu</span><br />
+              <span class="hero__subtitle">Building</span>
+              <span class="typing" id="typing"></span>
+            </h1>
+
+            <p class="muted hero__desc">
+              Selected projects across cloud, full-stack, and applied ML — designed to be clean, measurable, and easy to
+              evaluate.
+            </p>
+
+           
+
+            <div class="hero__meta" aria-label="Links">
+              <a class="chip" href="https://github.com/sazbula" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="chip" href="https://www.linkedin.com/in/sabina-bacaoanu/" target="_blank" rel="noreferrer">LinkedIn</a>
+              
+            </div>
+          </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section class="section" id="work">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2>Projects</h2>
+            <p class="muted">Case-study layout with technical highlights and links.</p>
+          </div>
+
+          <div class="filters reveal" role="tablist" aria-label="Project filters">
+            
+          </div>
+
+          <div class="case-list" id="projectGrid">
+            <!-- Project 1 -->
+            <article class="case reveal" data-tags="web ai">
+              <div class="case__left">
+                <h3 class="case__title">Mora</h3>
+                <p class="muted case__subtitle">
+                  Cloud-based multilingual captions + translation supporting speech-to-text and manual input, deployed on
+                  Microsoft Azure.
+                </p>
+
+                <ul class="case__bullets">
+                  <li>FastAPI backend</li>
+                  <li>Dockerized services</li>
+                  <li>Azure App Service & SQL</li>
+                  <li>CI/CD with GitHub Actions</li>
+                  <li>Application monitoring</li>
+                </ul>
+
+                <div class="case__links">
+                  <a class="case__link" href="#" target="_blank" rel="noreferrer">View Repo →</a>
+                  <a class="case__link" href="#" target="_blank" rel="noreferrer">Demo Video →</a>
+                </div>
+              </div>
+
+              <div class="case__right">
+                <div class="case__shot">
+                  <img src="assets/mora.png" alt="Mora project preview" />
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="case reveal" data-tags="web">
+              <div class="case__left">
+                <h3 class="case__title">PopIn</h3>
+                <p class="muted case__subtitle">
+                  Local events platform with multi-role flows and a clean, responsive UI.
+                </p>
+
+                <ul class="case__bullets">
+                  <li>Role-based access (attendee/organizer/admin)</li>
+                  <li>Database-backed event management</li>
+                  <li>Responsive layout + clear UX</li>
+                </ul>
+
+                <div class="case__links">
+                  <a class="case__link" href="#" target="_blank" rel="noreferrer">View Repo →</a>
+                  <a class="case__link" href="#" target="_blank" rel="noreferrer">Live Demo →</a>
+                </div>
+              </div>
+
+              <div class="case__right">
+                <div class="case__shot">
+                  <img src="assets/popin.png" alt="PopIn project preview" />
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2>About</h2>
+            <p class="muted">Short, portfolio-style summary (not a personal website vibe).</p>
+          </div>
+
+          <div class="about__grid">
+            <div class="about__photo reveal">
+              <div class="photo-card">
+                <img src="assets/me.jpg" alt="Sabina Bacaoanu portrait" />
+              </div>
+            </div>
+
+            <div class="about__text reveal">
+              <p>
+                I’m Sabina Bacaoanu, a Computer Science & AI student focused on building practical products with clean
+                design and measurable results.
+              </p>
+              <p class="muted">
+                I enjoy projects that combine strong engineering (cloud, CI/CD, data) with clear UX and evaluation.
+              </p>
+
+              <div class="about__highlights">
+                <div class="stat"><b>AI</b><span>Modeling & evaluation</span></div>
+                <div class="stat"><b>Cloud</b><span>Azure + Docker</span></div>
+                <div class="stat"><b>Web</b><span>UI + data viz</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2>Skills</h2>
+            <p class="muted">Tools and technologies I use in projects.</p>
+          </div>
+
+          <div class="skills reveal">
+            <div class="skills__group">
+              <h3>Core</h3>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">SQL</span>
+                <span class="chip">Git</span>
+              </div>
+            </div>
+
+            <div class="skills__group">
+              <h3>AI / Data</h3>
+              <div class="chips">
+                <span class="chip">Pandas</span>
+                <span class="chip">scikit-learn</span>
+                <span class="chip">PyTorch</span>
+                <span class="chip">EDA</span>
+              </div>
+            </div>
+
+            <div class="skills__group">
+              <h3>Cloud / DevOps</h3>
+              <div class="chips">
+                <span class="chip">Azure</span>
+                <span class="chip">Docker</span>
+                <span class="chip">CI/CD</span>
+                <span class="chip">GitHub Actions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <!-- CONTACT (replace your entire current contact section with this) -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contactSimple reveal">
+      <h2 class="contactSimple__title">Contact</h2>
+      <div class="contactSimple__underline" aria-hidden="true"></div>
+
+      <p class="contactSimple__text muted">
+        If you’d like to connect about internships or projects, feel free to contact me.
+      </p>
+
+      <div class="contactSimple__buttons">
+        <a class="contactBtn" href="sbacaoanu.ieu2023@student.ie.edu">sbacaoanu.ieu2023@student.ie.edu</a>
+        <a class="contactBtn" href="https://www.linkedin.com/in/sabina-bacaoanu/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="contactBtn" href="tel:+40743034456">+40 743 034 456</a>
+      </div>
+    </div>
+  </div>
+</section>
+      <footer class="footer">
+        <div class="container footer__row">
+          <span class="muted small">© <span id="year"></span> Sabina Bacaoanu</span>
+          <a class="link small" href="#top">Back to top ↑</a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
