@@ -57,7 +57,7 @@
             </h1>
 
             <p class="muted hero__desc">
-              Selected projects across cloud, full-stack, and applied ML — designed to be clean, measurable, and easy to
+              Selected projects across cloud, full-stack, and applied ML. Designed to be clean, measurable, and easy to
               evaluate.
             </p>
 
@@ -79,79 +79,140 @@
         </div>
       </section>
 
-      <!-- WORK -->
-      <section class="section" id="work">
-        <div class="container">
-          <div class="section__head reveal">
-            <h2>Projects</h2>
-            <p class="muted">Case-study layout with technical highlights and links.</p>
-          </div>
+<!-- WORK -->
+<section class="section" id="work">
+  <div class="container">
+    <div class="section__head reveal">
+      <h2>Projects</h2>
+      <p class="muted">Case-study layout with technical highlights and links.</p>
+    </div>
 
-          <div class="filters reveal" role="tablist" aria-label="Project filters">
-            
-          </div>
+    <div class="filters reveal" role="tablist" aria-label="Project filters"></div>
 
-          <div class="case-list" id="projectGrid">
-            <!-- Project 1 -->
-            <article class="case reveal" data-tags="web ai">
-              <div class="case__left">
-                <h3 class="case__title">Mora</h3>
-                <p class="muted case__subtitle">
-                  Cloud-based multilingual captions + translation supporting speech-to-text and manual input, deployed on
-                  Microsoft Azure.
-                </p>
+    <div class="case-list" id="projectGrid">
+      <!-- Project 1: BeyondStats -->
+      <article class="case reveal" data-tags="web ai">
+        <div class="case__left">
+          <h3 class="case__title">BeyondStats</h3>
+          <p class="muted case__subtitle">
+            Interactive gender-inequality explorer with mini-games, maps, timelines and country insights . Built to make complex
+            data visual, clear, and engaging. Won first place in Deeply Human Hackathon. 
+          </p>
 
-                <ul class="case__bullets">
-                  <li>FastAPI backend</li>
-                  <li>Dockerized services</li>
-                  <li>Azure App Service & SQL</li>
-                  <li>CI/CD with GitHub Actions</li>
-                  <li>Application monitoring</li>
-                </ul>
+           <ul class="case__bullets">
+            <li>ML: Random Forest regression</li>
+            <li>Data cleaning + parsing + normalization</li>
+            <li>Feature engineering </li>
+            <li>Model training </li>
+            <li>React + TypeScript + Netlify deployment</li>
+          </ul>
 
-                <div class="case__links">
-                  <a class="case__link" href="#" target="_blank" rel="noreferrer">View Repo →</a>
-                  <a class="case__link" href="#" target="_blank" rel="noreferrer">Demo Video →</a>
-                </div>
-              </div>
-
-              <div class="case__right">
-                <div class="case__shot">
-                  <img src="assets/mora.png" alt="Mora project preview" />
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 2 -->
-            <article class="case reveal" data-tags="web">
-              <div class="case__left">
-                <h3 class="case__title">PopIn</h3>
-                <p class="muted case__subtitle">
-                  Local events platform with multi-role flows and a clean, responsive UI.
-                </p>
-
-                <ul class="case__bullets">
-                  <li>Role-based access (attendee/organizer/admin)</li>
-                  <li>Database-backed event management</li>
-                  <li>Responsive layout + clear UX</li>
-                </ul>
-
-                <div class="case__links">
-                  <a class="case__link" href="#" target="_blank" rel="noreferrer">View Repo →</a>
-                  <a class="case__link" href="#" target="_blank" rel="noreferrer">Live Demo →</a>
-                </div>
-              </div>
-
-              <div class="case__right">
-                <div class="case__shot">
-                  <img src="assets/popin.png" alt="PopIn project preview" />
-                </div>
-              </div>
-            </article>
+          <div class="case__links">
+            <a class="case__link" href="https://github.com/sazbula/BeyondStats.git" target="_blank" rel="noreferrer">View Repo →</a>
+            <a class="case__link" href="https://beyondstats.netlify.app/" target="_blank" rel="noreferrer">Live Demo →</a>
           </div>
         </div>
-      </section>
 
+        <div class="case__right">
+          <div class="case__shot">
+            <img src="assets/beyondstats.jpg" alt="BeyondStats project preview" />
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Mora -->
+      <article class="case reveal" data-tags="web cloud">
+        <div class="case__left">
+          <h3 class="case__title">Mora</h3>
+          <p class="muted case__subtitle">
+            Cloud-based multilingual captions + translation platform supporting speech-to-text and manual input,
+            deployed on Microsoft Azure.
+          </p>
+
+          <ul class="case__bullets">
+            <li>FastAPI backend</li>
+            <li>Dockerized services</li>
+            <li>Azure App Service</li>
+            <li>Azure SQL</li>
+            <li>CI/CD (GitHub Actions)</li>
+            <li>Monitoring & logging</li>
+          </ul>
+
+          <div class="case__links">
+            <a class="case__link" href="https://github.com/hibbakamas/mora" target="_blank" rel="noreferrer">View Repo →</a>
+            <a class="case__link" href="https://drive.google.com/file/d/1GM-56ogIr39209g4PYpRQ-85NgNzf83O/view" target="_blank" rel="noreferrer">Demo Video →</a>
+          </div>
+        </div>
+
+        <div class="case__right">
+          <div class="case__shot">
+            <img src="assets/mora.jpg" alt="Mora project preview" />
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: PopIn -->
+      <article class="case reveal" data-tags="desktop db">
+        <div class="case__left">
+          <h3 class="case__title">PopIn</h3>
+          <p class="muted case__subtitle">
+            Multi-user city events platform with role-based dashboards for Attendees, Organizers, and Admins, built with
+            a JavaFX GUI and relational database persistence.
+          </p>
+
+          <ul class="case__bullets">
+            <li>Java & OOP</li>
+            <li>JavaFX GUI</li>
+            <li>Role-based dashboards</li>
+            <li>Relational database</li>
+          </ul>
+
+          <div class="case__links">
+            <a class="case__link" href="https://github.com/hibbakamas/PopIn" target="_blank" rel="noreferrer">View Repo →</a>
+            <a class="case__link" href="https://drive.google.com/file/d/1rBV8fz1MAMgvw7AnoHYIsE-fDiB9WL6Q/view" target="_blank" rel="noreferrer">Demo Video →</a>
+          </div>
+        </div>
+
+        <div class="case__right">
+          <div class="case__shot">
+            <img src="assets/popin.jpg" alt="PopIn project preview" />
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4: DateJar -->
+      <article class="case reveal" data-tags="web cloud">
+        <div class="case__left">
+          <h3 class="case__title">DateJar</h3>
+          <p class="muted case__subtitle">
+            Full-stack date planning web app for discovering and saving date ideas, building a personal date jar, and
+            exploring ideas on an interactive map.
+          </p>
+
+          <ul class="case__bullets">
+            <li>FastAPI backend</li>
+            <li>PostgreSQL</li>
+            <li>JS / HTML / CSS</li>
+            <li>Docker</li>
+            <li>CI/CD (GitHub Actions)</li>
+            <li>Azure + Prometheus</li>
+          </ul>
+
+          <div class="case__links">
+            <a class="case__link" href="https://github.com/sazbula/date_jar_app" target="_blank" rel="noreferrer">View Repo →</a>
+            <a class="case__link" href="https://drive.google.com/file/d/1OpULTkD-X3biGRzo16AL3pFK9PTC17O1/view?usp=sharing" target="_blank" rel="noreferrer">Demo Video →</a>
+          </div>
+        </div>
+
+        <div class="case__right">
+          <div class="case__shot">
+            <img src="assets/datejar.jpg" alt="DateJar project preview" />
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
       <!-- ABOUT -->
       <section class="section" id="about">
         <div class="container">

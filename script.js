@@ -42,7 +42,7 @@ document.querySelectorAll(".nav__link").forEach((a) => {
 
 // ---- Typing effect ----
 const typingEl = document.getElementById("typing");
-const phrases = ["AI systems.", "cloud products.", "clean interfaces."];
+const phrases = ["data-driven platforms.", "production DevOps flows.","ML-powered insights.", "full-stack products.","cloud-ready apps."];
 let p = 0, i = 0, deleting = false;
 
 function tick() {
