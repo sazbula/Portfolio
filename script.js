@@ -139,3 +139,4 @@ copyBtn?.addEventListener("click", async () => {
     if (formMsg) formMsg.textContent = "Could not copy automatically — please copy manually.";
   }
 });
+
